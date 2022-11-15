@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- (C) 2020 Michael Kreinbihl -->
+<!-- jQuery Example -->
+<html lang="de">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- jQuery first, then Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+
+
+  <title>WF - SLIM Full Example</title>
+
+
+</head>
+<body>
+	<h1 align="center">SLIM Rest API Example</h1>
+
+	<div>
+		<span id="heading1">Locations &nbsp;&nbsp;&nbsp;
+			<button type="button" class="btn btn-primary" id="btn1">Request Data</button>
+		</span>
+		<div id="locations">
+
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal bd-example-modal-sm" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Location Details</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body" id="detailsModalBody">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+ <script src="js/m_data_get.js"></script>
+ <script src="js/m_data_render.js"></script>
+ <script src="js/main.js"></script>
+
+</body>
+</html>
