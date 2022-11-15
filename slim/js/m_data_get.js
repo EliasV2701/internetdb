@@ -32,7 +32,7 @@ var m_data_get = (function () {
     m_data_get.detail = null;
     m_data_get.finishedWithError = false;
     m_data_get.error = {};
-    m_data_get.baseadr = "https://dev.wappprojects.de/slim";  // www.xxx.de/app/api/v3
+    m_data_get.baseadr = "https://dev.wappprojects.de/wiws20i/slim";  // www.xxx.de/app/api/v3
 
 	
 

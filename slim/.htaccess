@@ -1,0 +1,20 @@
+# Added a rewrite to respond with a 200 SUCCESS on every OPTIONS request.
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+## Can also be done in SLIM index.php
+# Allow cross-origin 
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, PUT, OPTIONS"
+Header always set Access-Control-Allow-Credentials "true"
+#Header always set Access-Control-Allow-Headers "Authorization, DNT, User-Agent, Keep-Alive, Content-Type, accept, origin, X-Requested-With, Accept, Origin, api-token, email"
+
+Header always set Access-Control-Allow-Headers "Authorization,DNT,User-Agent,Keep-Alive,Content-Type,accept,origin,X-Requested-With"
+Header always set Access-Control-Allow-Headers "Content-Type, Accept, Origin, Authorization, api-token, email"
+
+AddDefaultCharset utf-8

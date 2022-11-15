@@ -1,10 +1,10 @@
 <?php
 	class db{
 		// Properties
-		private $dbhost = "dev.wappprojects.de";
-		private $dbuser = "d0xxx";
-		private $dbpass = "yyy";
-		private $dbname = "d0xxx";
+		private $dbhost = "wappprojects.de/mysqladmin/PMA5/"; //dev.wappprojects.de
+		private $dbuser = "d03b050b";
+		private $dbpass = "20i-dev-#db";
+		private $dbname = "d03b050b";
 
 		// Connect to DB
 		public function connect(){
