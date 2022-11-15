@@ -23,7 +23,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
  */
 
 
-require 'vendor/autoload.php';
+require '../../slim/vendor/autoload.php';
 require_once 'helper/helper.php';
 require_once 'security/wf_jwt.php';
 
